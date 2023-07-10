@@ -32,7 +32,7 @@ $ npx expo start
 - [Descrição](#Descrição)
 - [Aprendizados](#Aprendizados)
 - [Tecnologias](#Tecnologias)
-- [Linkedin](https://www.linkedin.com/in/maikaodev/)
+- [Linkedin](https://www.linkedin.com/in/maikaodev/){:target="_blank"}
 
 
 ## Descrição
