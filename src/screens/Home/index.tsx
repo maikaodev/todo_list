@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
+import uuid from 'uuid-js';
 
 import {
   FlatList,
@@ -53,7 +53,7 @@ export const Home = () => {
       return object.title === title;
     });
 
-    const id = String(finishedTaskList.length + 1);
+    const id = uuid.create().toString();
 
     setFinishedTaskList([...finishedTaskList, { id, title }]);
 
@@ -70,9 +70,9 @@ export const Home = () => {
       return item.title === title;
     });
 
-    const idx = String(todoList.length + 1);
+    const id = uuid.create().toString();
 
-    setTodoList([...todoList, { id: idx, title: title }]);
+    setTodoList([...todoList, { id, title }]);
 
     let list = [...finishedTaskList];
 
